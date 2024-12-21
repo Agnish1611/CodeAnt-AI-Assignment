@@ -8,6 +8,9 @@ export default {
     extend: {
       fontFamily: {
         "inter": ['Inter', 'sans-serif']
+      },
+      boxShadow: {
+        "primary": "-2px 9px 40px 0px rgba(0,0,0,0.58)"
       }
     },
   },
