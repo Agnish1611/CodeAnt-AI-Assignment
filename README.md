@@ -1,50 +1,72 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# My CodeAnt AI assignment
 
-Currently, two official plugins are available:
+This project is a modern React application built with TypeScript and powered by [Bun](https://bun.sh/), a fast all-in-one JavaScript runtime. It is designed to provide a robust and efficient development experience with TypeScript's type safety and Bun's speed.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Prerequisites
 
-## Expanding the ESLint configuration
+Ensure you have the following installed:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Bun](https://bun.sh/) (version `x.x.x` or higher)
+- Node.js (optional, for compatibility with some tools)
+- Git (optional, for version control)
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Follow these steps to get started with the project:
+
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+cd <repository-name>
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Install Dependencies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+bun install
 ```
+
+### 3. Run the Development Server
+
+```bash
+bun run dev
+```
+
+### 4. Build for Production
+
+To create an optimized production build, run:
+
+```bash
+bun run build
+```
+
+### 5. Start the Production Server
+
+After building the project, you can serve it with:
+
+```bash
+bun run start
+```
+
+## Scripts
+
+Here are the key scripts you can run:
+
+- `bun run dev`: Start the development server.
+- `bun run build`: Build the project for production.
+- `bun run start`: Serve the production build.
+- `bun run lint`: Lint the codebase for errors.
+- `bun run test`: Run tests.
+
+## TypeScript Configuration
+
+This project is configured with TypeScript to enable type safety and improve code quality. You can modify the `tsconfig.json` file to adjust TypeScript settings.
+
+---
+
+Happy coding! 🎉
+```  
+
+Replace `<repository-url>` and `<repository-name>` with your repository details, and customize as needed!
