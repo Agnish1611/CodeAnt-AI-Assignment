@@ -29,8 +29,10 @@ export const UserNavigation: React.FC<UserNavigationProps> = ({ menuOpen }) => {
   return (
     <>
       {menuOpen && (
-        <div className="p-4 absolute top-12 flex flex-col gap-3 animate-top z-10 bg-white w-full sm:hidden">
-          <NavigationContent />
+        <div className="h-dvh absolute w-dvw bg-[#6C6C6C4D]">
+          <div className="p-4 top-12 flex flex-col gap-3 animate-top z-10 bg-white w-full sm:hidden">
+            <NavigationContent />
+          </div>
         </div>
       )}
       <div className="max-sm:hidden p-4 h-full absolute top-12 flex flex-col gap-3 bg-white w-[242px]">
